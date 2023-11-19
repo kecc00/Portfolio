@@ -1,15 +1,17 @@
 /* Estilos generales */
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-}
+  }
 
+  /*Menu*/
 header {
-    /*background-color: transparent;*/
     background: rgba(0, 0, 0, 0.8);
     padding: 15px;
 }
 
+/*Indicadores*/
 .menu {
     display: flex;
     justify-content: space-between;
@@ -34,27 +36,26 @@ header {
     color: white;
 }
 
-/*Color links*/
+/*Diseño de Links*/
 nav ul li a:hover {
-    color: #54849c;
+    color: red; /*color cuando el mouse pasa por encima*/
 }
 
-nav ul li a:active,
+nav ul li a:active, 
 nav ul li a:focus {
-    color: #54849c;
+    color: #54849c; /*color cuando estas en la pagina*/
 }
 
-/*Icons*/
+/*Iconos*/
 .social-icons {
     list-style: none;
     display: flex;
     align-items: center;
     padding: 0;
-    margin: 0;
 }
 
 .social-icons li {
-    margin: 0 10px;
+    margin: 0 15px;
     font-size: 25px;
 }
 
@@ -63,10 +64,7 @@ nav ul li a:focus {
     color: white;
 }
 
-.menu-toggle {
-    display: none;
-}
-
+/*Pie de Pagina*/
 /*footer {
     background: #333;
     color: #fff;
@@ -78,46 +76,40 @@ nav ul li a:focus {
 }*/
 
 
-/* Media query para menú responsivo */
-@media (max-width: 734px) {
-    .menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .menu-links,
-    .social-icons {
-        flex-direction: column;
-        text-align: left;
-    }
 
-    .menu li,
-    .social-icons li {
-        margin: 10px 0;
-    }
 
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-    }
 
-    .menu-links,
-    .social-icons {
-        display: none;
-    }
 
-    .menu.open .menu-links,
-    .menu.open .social-icons {
-        display: flex;
-        font-size: 20px;
-    }
-}
 
-/* Tablets */
-@media (min-width: 735px) and (max-width: 834px) {
-    /* Estilos para tablets */
-}
 
-* Computadoras de escritorio */ @media (min-width: 835px) {
-    /* Estilos para pantallas más grandes */
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}*/
+
